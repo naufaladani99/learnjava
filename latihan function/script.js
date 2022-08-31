@@ -5,4 +5,14 @@ function hasilJumlah(a, b) {
   return jumlah;
 }
 
-alert(hasilJumlah(10, 100));
+function jumlahVolumeDuaKubus(a, b) {
+  var volumeA, volumeB, total;
+
+  volumeA = a * a * a;
+  volumeB = b * b * b;
+  var total = volumeA + volumeB;
+
+  return total;
+}
+
+console.log(jumlahVolumeDuaKubus(8, 3));
