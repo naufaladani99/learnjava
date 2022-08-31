@@ -1,10 +1,3 @@
-function hasilJumlah(a, b) {
-  var jumlah;
-  jumlah = a + b;
-
-  return jumlah;
-}
-
 function jumlahVolumeDuaKubus(a, b) {
   var volumeA, volumeB, total;
 
@@ -15,4 +8,24 @@ function jumlahVolumeDuaKubus(a, b) {
   return total;
 }
 
-console.log(jumlahVolumeDuaKubus(8, 3));
+function hasilJumlah(a, b) {
+  var jumlah;
+  jumlah = a + b;
+
+  return jumlah;
+}
+
+function penjumlahan() {
+  var hasil;
+
+  hasil = 0;
+
+  for (let i = 0; i < arguments.length; i++) {
+    hasil += arguments[i];
+  }
+  return hasil;
+}
+
+var arai = penjumlahan(2, 3, 4, 5);
+
+console.log(arai);
