@@ -13,7 +13,15 @@ class TodoController {
   static add(todo) {
     Todo.add(todo);
   }
+
   static delete(todo) {
+    if (todo.length) {
+      console.log("p");
+
+      let todos = Todo.show();
+
+      TodoView.show(todos);
+    }
     Todo.delete(todo);
   }
   static update(todo) {
